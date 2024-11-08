@@ -1,16 +1,27 @@
 var screen = document.getElementById("screen");
 
+
 function appendToScreen(param){
-   var a = screen.value += param;
-    lastElm = a.charAt(a.length-1);
-    if(lastElm == "+"){
-    document.getElementById("plus").disabled = true;
-    }
-    else if(lastElm == "-"){
-        document.getElementById("minus").disabled = true;
-        }
+    screen.value += param;
 }
 
+function appendToOperator(param){
+    if(screen.value.at(-1) == "+"){
+            document.getElementById("plus").disbaled = true; 
+    }
+    else{
+        screen.value += param;
+    }
+}
+function appendToOperator(param){
+    if(screen.value.at(-1) == "-"){
+            document.getElementById("minus").disbaled = true; 
+    }
+    else{
+        screen.value += param;
+    }
+}
+     
 function clearScreen(){
     screen.value = ""
 }
