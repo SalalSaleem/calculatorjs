@@ -45,11 +45,12 @@ function clearScreen(){
 
 function calculateResult(){
     try{
-        screen.value = eval(screen.value)
-    }catch(error){
-        screen.value = "Syntax Error"
-    }
-    
+    screen.value = eval(screen.value)
+        
+}catch(error){
+    screen.value = "Syntex Error"
+}
+
 }
 
 function clearOne(){
