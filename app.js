@@ -13,14 +13,7 @@ function appendToOperator(param){
         screen.value += param;
     }
 }
-function appendToOperator(param){
-    if(screen.value.at(-1) == "-"){
-            document.getElementById("minus").disbaled = true; 
-    }
-    else{
-        screen.value += param;
-    }
-}
+
      
 function clearScreen(){
     screen.value = ""
